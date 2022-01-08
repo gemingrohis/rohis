@@ -1,33 +1,15 @@
 const jadibut = () =>{
-return`╭──「 📖  *PRICE JADIBOT*」
-│
-├ • *Test Jadibot [30-60m]*
-│
-│ ⤷ *Free* 💌
-│
+return`╭──「 📖  *PRICE JADI OWNER BOT*」
 ├ • *Permanen*
 │
-│ ⤷ *Harga :  25k [E-Wallet]*
-│ ⤷ *Harga :  28k [Pulsa]*
+│ ⤷ *Harga :  10k [E-Wallet]*
+│ ⤷ *Harga :  15k [Pulsa]*
+│ ⤷ _Minat? Hubungi 0895410650067_
 │
-├─ 「 💰  *PAYMENT* 」
-│
-│ ⤷ *Dana [Diutamakan]*
-│ ⤷ *Ovo*
-│ ⤷ *Gopay*
-│ ⤷ *Pulsa Telkom*
-│
-├─ 「 👨‍💻  *RUN ON* 」
-│
-│ ⤷ *Heroku [Diutamakan]*
-│ ⤷ *Railway* 
-│
-├─ 「 📝  *NOTES* 」
-│
-│ ⤷ _Tidak perlu termux_
-│ ⤷ _Minat? Hubungi 0887435047326_
-│
-╰──「 *Thank's* 」
+╰──「 *Rohis'Bot* 」
+
+JOIN GRUP NULL OFICIAL:
+https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV
 `
 }
 exports.jadibut = jadibut
