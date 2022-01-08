@@ -114,7 +114,7 @@ const download = (prefix) => {
 `
 }
 const allmenu = (kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, alfa , alfa1, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii)  => {
-	return`❏───「 *WHATSAPP BOT* 」───❏
+	return`❏───「 *NULL BOT* 」───❏
                                
 ℒ⃝🌅  *THIS DAY*
 ${ucapannya2}
@@ -138,7 +138,7 @@ ${ucapannya2}
 📭 Personal Chat : ${totalchat.length - ini_gcchat}
 👥 Group Chat : ${ini_gcchat}
 👨‍👨‍👦‍👦 Total All Chat : ${totalchat.length}
-🌍 Browser : Chrome
+🌍 Browser : https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV
 🌐 Server : Baileys
 ✴️ Version : 3.5.3
 🚀 Speed :  ${latensii.toFixed(4)} Second
