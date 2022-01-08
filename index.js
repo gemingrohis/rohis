@@ -159,9 +159,9 @@ SEBAGIAN LU EDIT DI SETTING.JSON
 var nomor_ovo = `0887435047326\nA.N R*****DI` //gk usah di ubah ya klo gk punya ntr eror
 var nomor_dana = `0887435047326\nA.N R*****DI` //gk usah di ubah ya klo gk punya ntr eror
 var nomor_gopay = `0887435047326\nA.N R*****DI` //gk usah di ubah ya klo gk punya ntr eror
-var qr_code_ovo = 'https://i.postimg.cc/hvM11Y08/putra1.jpg' //gk usah di ubah ya klo gk punya ntr eror
-var qr_code_dana = 'https://i.postimg.cc/hvM11Y08/putra1.jpg' //gk usah di ubah ya klo gk punya ntr eror
-var qr_code_gopay = 'https://i.postimg.cc/hvM11Y08/putra1.jpg' //gk usah di ubah ya klo gk punya ntr eror
+var qr_code_ovo = 'https://i.postimg.cc/7hJVnYmf/rohis.jpg' //gk usah di ubah ya klo gk punya ntr eror
+var qr_code_dana = 'https://i.postimg.cc/7hJVnYmf/rohis.jpg' //gk usah di ubah ya klo gk punya ntr eror
+var qr_code_gopay = 'https://i.postimg.cc/7hJVnYmf/rohis.jpg' //gk usah di ubah ya klo gk punya ntr eror
 
 var _minggu = 'Rp 10.000,00' //Masukkan harga sewa sesuai keinginan
 var __minggu = 'Rp 15.000,00'
@@ -205,7 +205,7 @@ autoregister = setting.user_register
 typemenu = 'document'
 img = setting.img
 apiku = 'http://Wa.me//62895410650067?text=assalamuallaikum+hallo+kakak+Ganteng+dan+imut+saya+mau+bertanya+terkait+Bot+Null'
-gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc wa gk usah di ganti 👍
+gc_wa_lu = 'https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
 owner = targetpc
 fake = setting.fake
@@ -1842,7 +1842,7 @@ const checkWin = (sender) => {
 						try {
 							if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
 							const amountXp = Math.floor(Math.random() * 10) + 50
-							const requiredXp = 30 * (Math.pow(2, currentLevel) - 1)
+							const requiredXp = 30000 * (Math.pow(2, currentLevel) - 1)
 							const getLevel = getLevelingLevel(sender)
 							addLevelingXp(sender, amountXp)
 							if (requiredXp <= getLevelingXp(sender)) {
