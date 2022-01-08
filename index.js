@@ -5,7 +5,7 @@
 	あ YANG BELUM PAHAM CAR RUN DI HEROKU TONTON AJA VIDEO SEBELUMNYA
 	あ FITUR JUALAN TELAH DI HAPUS [ Bisa order sama saya klo mau ]
 	
-	あ JASA RUN HEROKU BISA PC wa.me/62887435047326 BIAR BOT NYA GAK TERLALU DELAY
+	あ JASA RUN HEROKU BISA PC wa.me/62895410650067 BIAR BOT NYA GAK TERLALU DELAY
 	
 */   
 const
@@ -159,9 +159,9 @@ SEBAGIAN LU EDIT DI SETTING.JSON
 var nomor_ovo = `0887435047326\nA.N R*****DI` //gk usah di ubah ya klo gk punya ntr eror
 var nomor_dana = `0887435047326\nA.N R*****DI` //gk usah di ubah ya klo gk punya ntr eror
 var nomor_gopay = `0887435047326\nA.N R*****DI` //gk usah di ubah ya klo gk punya ntr eror
-var qr_code_ovo = 'https://h.top4top.io/p_2053vk0uw1.jpg' //gk usah di ubah ya klo gk punya ntr eror
-var qr_code_dana = 'https://j.top4top.io/p_20532posd1.jpg' //gk usah di ubah ya klo gk punya ntr eror
-var qr_code_gopay = 'https://i.top4top.io/p_2053em3vh1.jpg' //gk usah di ubah ya klo gk punya ntr eror
+var qr_code_ovo = 'https://i.postimg.cc/hvM11Y08/putra1.jpg' //gk usah di ubah ya klo gk punya ntr eror
+var qr_code_dana = 'https://i.postimg.cc/hvM11Y08/putra1.jpg' //gk usah di ubah ya klo gk punya ntr eror
+var qr_code_gopay = 'https://i.postimg.cc/hvM11Y08/putra1.jpg' //gk usah di ubah ya klo gk punya ntr eror
 
 var _minggu = 'Rp 10.000,00' //Masukkan harga sewa sesuai keinginan
 var __minggu = 'Rp 15.000,00'
@@ -179,9 +179,9 @@ fthumb = setting.fakethumb
 hit_today = []
 blocked = []
 ban = []
-limitawal = "50"
-gcounttprem = "50" 
-gcounttuser = "25" 
+limitawal = "10"
+gcounttprem = "1000" 
+gcounttuser = "10" 
 
 let multi = true
 let nopref = false
@@ -196,15 +196,15 @@ banChats = setting.self_mode
 autorespon = true
 offline = false
 readGc = true 
-readPc = false 
-antitrol = false 
-bugc = false
-autovn = true
+readPc = true 
+antitrol = true 
+bugc = true
+autovn = false
 autoketik = false
 autoregister = setting.user_register
 typemenu = 'document'
 img = setting.img
-apiku = 'https://zeeoneofc.github.io/'
+apiku = 'http://Wa.me//62895410650067?text=assalamuallaikum+hallo+kakak+Ganteng+dan+imut+saya+mau+bertanya+terkait+Bot+Null'
 gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
 owner = targetpc
@@ -1842,7 +1842,7 @@ const checkWin = (sender) => {
 						try {
 							if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
 							const amountXp = Math.floor(Math.random() * 10) + 50
-							const requiredXp = 3000 * (Math.pow(2, currentLevel) - 1)
+							const requiredXp = 30 * (Math.pow(2, currentLevel) - 1)
 							const getLevel = getLevelingLevel(sender)
 							addLevelingXp(sender, amountXp)
 							if (requiredXp <= getLevelingXp(sender)) {
@@ -2029,9 +2029,9 @@ for (let i = 0; i < filter.length ; i++) {
 if (tebakgambar.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe) {
                 jawaban = tebakgambar[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `tebakgambar`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `tebakgambar`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     delete tebakgambar[sender.split('@')[0]]
                     fs.writeFileSync("./database/tebakgambar.json", JSON.stringify(tebakgambar))
                 } else {
@@ -2043,9 +2043,9 @@ if (siapakahaku.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromM
                 jawaban = siapakahaku[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                     delete siapakahaku[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `siapakahaku`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `siapakahaku`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     fs.writeFileSync("./database/siapakahaku.json", JSON.stringify(siapakahaku))
                 } else {
                     reply2("Jawaban Salah!")
@@ -2056,9 +2056,9 @@ if (tebakkalimat.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.from
                 jawaban = tebakkalimat[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                      delete tebakkalimat[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `tebakkalimat`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `tebakkalimat`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     fs.writeFileSync("./database/tebakkalimat.json", JSON.stringify(tebakkalimat))
                 } else {
                     reply2("Jawaban Salah!")
@@ -2069,9 +2069,9 @@ if (tebakkata.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe)
                 jawaban = tebakkata[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                     delete tebakkata[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `tebakkata`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `tebakkata`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     fs.writeFileSync("./database/tebakkata.json", JSON.stringify(tebakkata))
                 } else {
                     reply2("Jawaban Salah!")
@@ -2082,7 +2082,7 @@ if (tebaklirik.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe
                 jawaban = tebaklirik[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                     delete tebaklirik[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `tebaklirik`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 1000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `tebaklirik`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
                     addBalance(sender, 10, balance)
                     addLevelingXp(sender, 500)
                     fs.writeFileSync("./database/tebaklirik.json", JSON.stringify(tebaklirik))
@@ -2095,9 +2095,9 @@ if (tekateki.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe) 
                 jawaban = tekateki[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                     delete tekateki[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `tekateki`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `tekateki`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     fs.writeFileSync("./database/tekateki.json", JSON.stringify(tekateki))
                 } else {
                     reply2("Jawaban Salah!")
@@ -2108,9 +2108,9 @@ if (susunkata.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe)
                 jawaban = susunkata[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                     delete susunkata[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `susunkata`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `susunkata`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     fs.writeFileSync("./database/susunkata.json", JSON.stringify(susunkata))
                 } else {
                     reply2("Jawaban Salah!")
@@ -2121,9 +2121,9 @@ if (caklontong.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe
                 jawaban = caklontong[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                     delete caklontong[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `caklontong`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `caklontong`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     fs.writeFileSync("./database/caklontong.json", JSON.stringify(caklontong))
                 } else {
                     reply2("Jawaban Salah!")
@@ -2134,9 +2134,9 @@ if (family.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe) {
                 jawaban = family[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                     delete family[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `family100`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `family100`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     fs.writeFileSync("./database/family100.json", JSON.stringify(family))
                 } else {
                     reply2("Jawaban Salah!")
@@ -2147,9 +2147,9 @@ if (tebakanime.hasOwnProperty(sender.split('@')[0]) && !isCmd && !mek.key.fromMe
                 jawaban = tebakanime[sender.split('@')[0]]
                 if (budy.toLowerCase() == jawaban) {
                      delete tebakanime[sender.split('@')[0]]
-                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 500\n💰 + Balance $10", `© ${botname} | ${ownername}`, [{"buttonId": `tebakanime`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
-                    addBalance(sender, 10, balance)
-                    addLevelingXp(sender, 500)
+                    sendButMessage(from, "Selamat🥳 Jawaban kamu benar!\n\n🎁 + Exp 5000\n💰 + Balance $100", `© ${botname} | ${ownername}`, [{"buttonId": `tebakanime`,"buttonText": {"displayText": "Main Lagi"},"type": "RESPONSE"}], {quoted : mek})
+                    addBalance(sender, 100, balance)
+                    addLevelingXp(sender, 5000)
                     fs.writeFileSync("./database/tebakanime.json", JSON.stringify(tebakanime))
                 } else {
                     reply2("Jawaban Salah!")
@@ -2209,13 +2209,13 @@ ${prefix}buylimit 10
 ${prefix}buyglimit 10
 
 NOTE : 
-- Harga Limit Perlimit adalah $100 balance`)
+- Harga Limit Perlimit adalah $10 balance`)
 break
 case 'buylimit':{
-if (!q) return reply(`Kirim perintah *${prefix}buylimit* jumlah limit yang ingin dibeli\n\nHarga 1 limit = $100 balance`)
+if (!q) return reply(`Kirim perintah *${prefix}buylimit* jumlah limit yang ingin dibeli\n\nHarga 1 limit = $10 balance`)
 if (q.includes('-')) return reply(`Jangan menggunakan -`)
 if (isNaN(q)) return reply(`Harus berupa angka`)
-let ane = Number(nebal(q) * 100)
+let ane = Number(nebal(q) * 10)
 if (getBalance(sender, balance) < ane) return reply(`Balance kamu tidak mencukupi untuk pembelian ini`)
 kurangBalance(sender, ane, balance)
 giveLimit(sender, nebal(q), limit)
@@ -2226,10 +2226,10 @@ reply(`Pembeliaan limit sebanyak ${q} berhasil
 }
 break
 case 'buyglimit':{
-if (!q)return reply(`Example : ${prefix + command} 10\n\nHarga 1 limit = $100 balance`)
+if (!q)return reply(`Example : ${prefix + command} 10\n\nHarga 1 limit = $10 balance`)
 if (q.includes('-')) return reply(`Jangan menggunakan -`)
 if (isNaN(q)) return reply(`Harus berupa angka`)
-const koinPerlimit = 100
+const koinPerlimit = 10
 const total = koinPerlimit * q
 if (getBalance(sender,balance) <= total) return reply(`maaf Balance kamu belum mencukupi. silahkan kumpulkan dan beli nanti`)
 kurangBalance(sender, total, balance)
@@ -2440,7 +2440,7 @@ break
                 break
         case 'trigger':
 					reply ('Mungkin yg kamu maksud .triggered')
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break
 					case 'sampah':
 					if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -2455,7 +2455,7 @@ break
                     buffer = await getBuffer(titid.message)
 					alpha.sendMessage(from, buffer, image, {caption : lang.success(),quoted: mek})
                    }
-                   await limitAdd(sender, limit)
+                   await limitAdd(sender, 1, limit)
               break       
 		case 'triggered':case 'gay': case 'glass': case 'passed': case 'jail': case 'comrade':case 'green': case 'blue': case 'sepia': case 'wasted': case 'greyscale': case 'blurple2': case 'blurple': case 'red': case 'invertgreyscale': case 'invert':
 		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -2477,7 +2477,7 @@ break
 					} else {
 					reply('Gunakan foto!')
 					}
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break 
 					case 'jadian':
 					if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -2490,7 +2490,7 @@ teks = `Ciee.. yang lagi jadian @${akuu.jid.split('@')[0]}  (♥️ ) @${diaa.ji
 jds.push(akuu.jid)
 jds.push(diaa.jid)
 mentions(teks, jds, true)
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 break
    case 'group': 
    case 'gc': 
@@ -2559,7 +2559,7 @@ case 'getbio':
                 if (p.status == 401) {
                 reply("Error! mungkin diprivate")
                 }
-                await limitAdd(sender, limit)
+                await limitAdd(sender, 1, limit)
                 break
 /*case 'creategroup':
 case 'creategrup':
@@ -2604,7 +2604,7 @@ case 'creategrup':
 				                    }
 				                }
 				                reply(fox)
-				await limitAdd(sender, limit)
+				await limitAdd(sender, 1, limit)
 		                break
 case 'setname':
 					if (!isGroup) return reply(lang.onlygc())
@@ -2612,7 +2612,7 @@ case 'setname':
 					if (!isBotGroupAdmins) return reply(lang.botNotAdm())
 					alpha.groupUpdateSubject(from, `${body.slice(9)}`)
 					alpha.sendMessage(from, '「  SUKSES  」Mengubah Nama Grup', text, { quoted: fdoc })
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break 
 case 'setdesc':
 					if (!isGroup) return reply(lang.onlygc())
@@ -2620,7 +2620,7 @@ case 'setdesc':
 					if (!isBotGroupAdmins) return reply(lang.botNotAdm())
 					alpha.groupUpdateDescription(from, `${body.slice(9)}`)
 					alpha.sendMessage(from, '*「  SUKSES  」Mengubah Desk Grup', text, { quoted: fdoc })
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 case 'spam':
 if (!isGroup) return reply(lang.onlygc())
@@ -2632,7 +2632,7 @@ if (!isGroup) return reply(lang.onlygc())
 				for (let i = 0; i < argzi[1]; i++){
 					alpha.sendMessage(from, argzi[0], MessageType.text)
 				}
-				await limitAdd(sender, limit)
+				await limitAdd(sender, 1, limit)
 					break    
 case 'readall':
 					if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
@@ -2731,7 +2731,7 @@ case 'bcgif':
 					"displayName": `${ini_list.length} kontak`,
 					"contacts": ini_list 
 					}, 'contactsArrayMessage', { quoted: fkontak})
-					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, jangan lupa donasi kak😇`
+					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, jangan lupa kenalan kak😇`
 var buttonss = [
 {buttonId: 'donasi', buttonText:{displayText: 'Donasi'}, type: 1},
 {buttonId: 'sewabot', buttonText:{displayText: 'Sewa'}, type: 1}
@@ -2766,7 +2766,7 @@ teks += `> Waktu : ` + moment(`${i.t}` * 1000).tz('Asia/Jakarta').format('DD/MM/
 tagg.push(i.jid)
 }
 mentions(teks, tagg, true)
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break   
 			case 'fakeloc':
 			if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -2800,7 +2800,7 @@ await limitAdd(sender, limit)
 		            .then(bu =>{
 		            fakestatus(bu)
 		            })   
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'kontag':
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
@@ -2819,7 +2819,7 @@ await limitAdd(sender, limit)
 		            + `TEL;type=CELL;type=VOICE;waid=${entah}:${phoneNum('+' + entah).getNumber('internasional')}\n`
 		            + 'END:VCARD'.trim()
 		            alpha.sendMessage(from, {displayName: `${nah}`, vcard: vcard}, contact, {contextInfo: {"mentionedJid": members_ids}})
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'sticktag':
 		            if (!isGroupAdmins) return reply(lang.onlygcAdmin())
@@ -2844,7 +2844,7 @@ await limitAdd(sender, limit)
 		            } else {
 		            fakegroup(`*Reply sticker yang sudah dikirim*`)
 		            }
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'totag':
 		            if (!isGroupAdmins) return reply(lang.onlygcAdmin())
@@ -2923,7 +2923,7 @@ await limitAdd(sender, limit)
 		        } else{
 		          fakestatus(`reply gambar/sticker/audio/video dengan caption ${prefix}totag`)
 		        }
-		        await limitAdd(sender, limit)
+		        await limitAdd(sender, 1, limit)
 					break   
 		    case 'fitnah':
 		if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
@@ -2965,7 +2965,7 @@ await limitAdd(sender, limit)
 		            alpha.sendMessage(from, buffer453, audio, { mimetype: 'audio/mp4', quoted: mek })
 		            fs.unlinkSync(ran)
 		            })
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'fast':
 		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -2981,7 +2981,7 @@ await limitAdd(sender, limit)
 		            alpha.sendMessage(from, buffer453, video, { mimetype: 'video/mp4', quoted: mek })
 		            fs.unlinkSync(ran)
 		            })
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'slow':
 		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -2997,7 +2997,7 @@ await limitAdd(sender, limit)
 		            alpha.sendMessage(from, buffer453, video, { mimetype: 'video/mp4', quoted: mek })
 		            fs.unlinkSync(ran)
 		            })
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		case 'tupai':
 		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -3011,7 +3011,7 @@ let hah = fs.readFileSync(ran)
 alpha.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:true, quoted: mek})
 fs.unlinkSync(ran)
 })
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break   
 		    case 'reverse':
 		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -3026,7 +3026,7 @@ await limitAdd(sender, limit)
 		            alpha.sendMessage(from, buffer453, video, { mimetype: 'video/mp4', quoted: mek })
 		            fs.unlinkSync(ran)
 		            })
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'anime2':
 					if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -3046,7 +3046,7 @@ await limitAdd(sender, limit)
 		            }
 		            )
 		            });
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'kontak':
 		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -3060,7 +3060,7 @@ await limitAdd(sender, limit)
 		            + `TEL;type=CELL;type=VOICE;waid=${entah}:${phoneNum('+' + entah).getNumber('internasional')}\n`
 		            + 'END:VCARD'.trim()
 		            alpha.sendMessage(from, {displayName: `${nah}`, vcard: vcard}, contact)
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'take':
 		    case 'colong':
@@ -3073,7 +3073,7 @@ await limitAdd(sender, limit)
 		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `ZEEONE OFC`
 		            require('./lib/fetcher.js').createExif(satu, dua)
 					require('./lib/fetcher.js').modStick(media_ , alpha, mek, from)
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 			case 'stikerwm':
 			case 'stickerwm':
@@ -3136,7 +3136,7 @@ await limitAdd(sender, limit)
 		            } else {
 		            fakestatus(`Kirim gambar dengan caption ${prefix}swm teks|teks atau tag gambar yang sudah dikirim`)
 		            }
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'upswteks':
 		            if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
@@ -3153,7 +3153,7 @@ await limitAdd(sender, limit)
 		            bur = `Sukses Upload Story Image dengan Caption: ${q}`
 		            alpha.sendMessage(from, bur, text, { quoted: mek })
 		            } else {
-		            fakegroup('```Reply gambarnya!```')
+		            fakegroup('```Reply gambarnya sayang!```')
 		            }
 		            break
 		    case 'upswvideo':
@@ -3165,7 +3165,7 @@ await limitAdd(sender, limit)
 		            bur = `Sukses Upload Story Video dengan Caption: ${q}`
 		            alpha.sendMessage(from, bur, text, { quoted: mek })
 		            } else {
-		            fakegroup('```Reply videonya!```')
+		            fakegroup('```Reply videonya sayang!```')
 		            }
 		            break
 		    case 'fdeface':
@@ -3192,14 +3192,14 @@ await limitAdd(sender, limit)
 		    		mat.jpegThumbnail = bufer;
 		   			mat.canonicalUrl = buu; 
 		    		alpha.sendMessage(from, mat, MessageType.extendedText, anu)
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'public':
 		              if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
 		          	if (banChats === false) return
 		          	banChats = false
 		          	//fakeitem(`「 *PUBLIC-MODE* 」`)
-						sendButMessage(from, `「 *PUBLIC-MODE* 」`, `Click self to return to self mode`, [
+						sendButMessage(from, `「 *PUBLIC-MODE* 」`, `Click Untuk Mematikan Bot`, [
             {
               buttonId: 'self',
               buttonText: {
@@ -3213,7 +3213,7 @@ await limitAdd(sender, limit)
 		          	if (banChats === true) return
 		          	banChats = true
 		          	//fakeitem(`「 *SELF-MODE* 」`)
-		          	sendButMessage(from, `「 *SELF-MODE* 」`, `Click public to return to public mode`, [
+		          	sendButMessage(from, `「 *SELF-MODE* 」`, `Click Untuk Menyalakan Bot`, [
             {
               buttonId: 'public',
               buttonText: {
@@ -3245,7 +3245,7 @@ break
 					quoted: mek
 					}
 					alpha.sendMessage(from, optionshidetag, text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "393470602054-1351628616@g.us" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": `${setting.fake}`, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`)} }  } })
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 				case 'sewacheck':
 				case 'ceksewa':
@@ -3455,12 +3455,12 @@ break
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${mediaa} ${ran}`, (err) => {
 					fs.unlinkSync(mediaa)
-					if (err) return reply('Yah gagal, coba ulangi ^_^')
+					if (err) return reply('Yah gagal, coba ulangi kak ^_^')
 					buffer = fs.readFileSync(ran)
-					fakethumb(buffer,'```Nih kak, jgn lupa Support YT : ZEEONE OFC```')
+					fakethumb(buffer,'```Nih kak, jgn lupa Join Grup Null https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV```')
 					fs.unlinkSync(ran)
 					})
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 			case 'ytsearch': case 'yts':
 			if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -3585,7 +3585,7 @@ break
 - *Link Dev* : ${i.link_dev}\n❉─────────────────────❉`
             }
             reply(store)
-            await limitAdd(sender, limit)
+            await limitAdd(sender, 1, limit)
 					break   
 		    case 'igstalk':
 		if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -3597,7 +3597,7 @@ const tt = `*INSTAGRAM STALK*
 
 \nUsername: ${tod.username}\nFullname: ${tod.fullname}\npostingan: ${tod.post}\ncategory_akun: ${tod.category_name}\nverified: ${tod.verified_user}\nprivate: ${tod.private_user}\nFollowing: ${tod.following}\nFollower: ${tod.followers}\nBio:\n${tod.bio}`;
 alpha.sendMessage(from, nih_buff, image, { quoted: mek, caption: tt });
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break       
 		
 case 'linkwa':
@@ -3614,14 +3614,14 @@ if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sen
             }
             reply(res)
             });
-            await limitAdd(sender, limit)
+            await limitAdd(sender, 1, limit)
 			break    
 case 'lirik':
 if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
             if(!q) return reply('lagu apa?')
             let song = await hx.lirik(q)
             sendMediaURL(from,song.thumb,song.lirik)
-            await limitAdd(sender, limit)
+            await limitAdd(sender, 1, limit)
 			break  
     case 'anime':
     if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -3656,7 +3656,7 @@ if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sen
 ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.batchSD}\n*Link Download HD* : ${anime.batchHD}`
            var ram = await getBuffer(anime.img)
             alpha.sendMessage(from,ram,image,{quoted:mek,caption:rem})
-            await limitAdd(sender, limit)
+            await limitAdd(sender, 1, limit)
 			break   
     case 'komiku':
     if (isLimit(sender, isPremium, isCreator, isOwner, limitawal, limit)) return sendButMessage(from, lang.limit(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -3669,7 +3669,7 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
 *Chapter Awal* : ${komik.chapter_awal}
 *Chapter Akhir* : ${komik.chapter_akhir}`
             sendMediaURL(from, komik.image,result)
-            await limitAdd(sender, limit)
+            await limitAdd(sender, 1, limit)
 					break     
 			case 'term':
 			
@@ -3721,7 +3721,7 @@ alpha.sendMessage(from, fto, image, {quoted:mek, caption:`*TWITTER MP3*${enter}$
 khs = await getBuffer(Anu)
 alpha.sendMessage(from, khs, audio, {mimetype:'audio/mp4', filename:'alphagan.mp3', quoted:mek, ptt:true})
 })
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break   
 		    case 'runtime':
 		    case 'test':
@@ -3817,7 +3817,7 @@ await limitAdd(sender, limit)
 		        } else{
 		          fakegroup(`reply gambar/sticker/audio/video dengan caption ${prefix}totag`)
 		        }
-		        await limitAdd(sender, limit)
+		        await limitAdd(sender, 1, limit)
 					break   
 		    case 'tomp4':
 		            if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
@@ -3830,7 +3830,7 @@ await limitAdd(sender, limit)
 		            fakegroup('reply stiker')
 		            }
 		            fs.unlinkSync(owogi)
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 			case 'togif':
 		            if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
@@ -3844,7 +3844,7 @@ await limitAdd(sender, limit)
 		            fakegroup('Reply stiker')
 		            }
 		            fs.unlinkSync(owoogi)
-		            await limitAdd(sender, limit)
+		            await limitAdd(sender, 1, limit)
 					break   
 		    case 'tourl':
 			case 'imgtourl':{
@@ -3857,7 +3857,7 @@ await limitAdd(sender, limit)
 											reply('kirim/reply gambar/video')
 										}
 										}
-											await limitAdd(sender, limit)
+											await limitAdd(sender, 1, limit)
 					break   
 /*
 ]=====> NSFW MENU<=====[
@@ -3870,7 +3870,7 @@ await limitAdd(sender, limit)
 					buffer = await getBuffer(anu.url)
 					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
                     alpha.sendMessage(from, buffer, image, anu)
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 			case 'blowjob2':
 					if (!isNsfw) return reply(lang.nsfwmo())
@@ -3879,7 +3879,7 @@ await limitAdd(sender, limit)
 					buffer = await getBuffer(anu.url)
 					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
                     alpha.sendMessage(from, buffer, image, anu)
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 			case 'megumin':
 					if (!isNsfw) return reply(lang.nsfwmo())
@@ -3888,7 +3888,7 @@ await limitAdd(sender, limit)
 					buffer = await getBuffer(anu.url)
 					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
                     alpha.sendMessage(from, buffer, image, anu)
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 			case 'trapnime':
 					if (!isNsfw) return reply(lang.nsfwmo())
@@ -3897,7 +3897,7 @@ await limitAdd(sender, limit)
 					buffer = await getBuffer(anu.url)
 					anu  = {contextInfo: {"forwardingScore":999,"isForwarded":true,'stanzaId': msgId, 'participant':`${numbernye}@s.whatsapp.net`, 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"locationMessage": {"degreesLatitude": 41.893714904785156, "degreesLongitude": -87.63370513916016, "name": fake , 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
                     alpha.sendMessage(from, buffer, image, anu)
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 
 /*
@@ -4095,7 +4095,7 @@ if (!isGroup) return reply(lang.onlygc())
 					}, 2000)
 					setTimeout( () => {
 					alpha.updatePresence(from, Presence.composing) 
-					fakestatus('```Byeee 👋```')
+					fakestatus('```Selamat Tinggal Sayang 👋```')
 					}, 0)
 					break     
 		    case 'leave2':
@@ -4121,7 +4121,7 @@ if (!isGroup) return reply(lang.onlygc())
 					anuu  = {contextInfo:{"forwardingScore":999,"isForwarded":true,'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': `${numbernye}@s.whatsapp.net`, 'remoteJid': '6289523258649-1604595598@g.us', 'quotedMessage': {"imageMessage": {"caption": `「 Bot by zeeone 」`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}}
                     alpha.sendMessage(from, thumbb ,image, anuu)
 				}
-				await limitAdd(sender, limit)
+				await limitAdd(sender, 1, limit)
 					break   
 	case 'inspect':
 		            try {
@@ -4152,7 +4152,7 @@ if (!isGroup) return reply(lang.onlygc())
 		             } catch {
 		             reply(lang.erorLink())
 		             }
-		             await limitAdd(sender, limit)
+		             await limitAdd(sender, 1, limit)
 					break   
 			case 'return':
 			case 'cek':
@@ -4213,7 +4213,7 @@ if (!isGroup) return reply(lang.onlygc())
 						teks += `[${no.toString()}]`
 					}
 					alpha.sendMessage(from, buf, image, {quoted: mek, caption: teks})
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 			
                 case 'memegenerator': case 'memegen':
@@ -4234,7 +4234,7 @@ if (!isGroup) return reply(lang.onlygc())
 										} catch (e) {
 											console.log(e)
 										}
-										limitAdd(sender, limit)
+										limitAdd(sender, 1, limit)
 									break
 					 	case 'stickermeme': case 'memesticker': case 'memestick': case 'stickmeme': case 'stcmeme': case 'smeme':
 						if (args.length < 1) return reply(`Kirim perintah *${prefix + command}* Alphabot`)
@@ -4252,7 +4252,7 @@ if (!isGroup) return reply(lang.onlygc())
 										} catch (e) {
 											console.log(e)
 										}
-										limitAdd(sender, limit)
+										limitAdd(sender, 1, limit)
 									break
              case 'demoteall':
 			if (!isGroup) return reply(lang.onlygc())
@@ -4303,13 +4303,13 @@ var m = q
 var m1 = m.split("|")[0];
 var m2 = m.split("|")[1]; 
 let photooxy = await getBuffer(`${alphaapi}/photooxy/${command}?apikey=${alphakey}&text=${m1}&text2=${m2}`)
-sendButImage(from,  `Nih udah jadi kak, jgn lupa donasi untuk beli dyno 🐦 ` , `${botname}™© | By ${ownername}`,photooxy, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"},{"buttonId": `donasi`,"buttonText": {"displayText": "💰 Donate"},"type": "RESPONSE"}], {thumbnail: Buffer.alloc(0), quoted: mek})
+sendButImage(from,  `Nih udah jadi kak, jgn lupa Join Grup Null https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV 🐦 ` , `${botname}™© | By ${ownername}`,photooxy, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"},{"buttonId": `donasi`,"buttonText": {"displayText": "💰 Donate"},"type": "RESPONSE"}], {thumbnail: Buffer.alloc(0), quoted: mek})
 await  limitAdd(sender, limit)
 break                         
 case 'shadow':case 'cname':case 'romantic':case 'burnpaper':case 'funnycup':case 'love':case 'undergrass':          case 'heart':case 'coffeecup':case 'wood':          case 'flower':         case 'wooden': case '3dsummer':case 'wolf_metal':case '3dnature':case 'underwater':          case 'goldenrose':case 'vector':case 'typography':case 'typography2': case 'underfall':  case 'smokyneon': case 'rainbow': case 'graffiti':case 'camouflage':case '3dglowing':          case 'vintage':case 'honey': case 'whitecube':case 'avatar': case 'glowrainbow':case 'nightsky':case 'fur':case 'flaming': case 'crisp':case 'embroidery':case 'bcake':          case '3dligth':case 'metallic': case 'striking':case 'watermelon':         case 'butterfly':case 'harry':case 'glowneon':case 'coffecup2':          case 'luxury': case 'cemetery':case 'woodblock':case 'sweet':case 'simple':case 'bevel':case 'underflower':         case 'underflower2':
 if (args.length < 1) return reply(lang.noteks(prefix, command))
 let photooxy2 = await getBuffer(`${alphaapi}/photooxy/${command}?apikey=${alphakey}&text=${q}`)
-sendButImage(from,  `Nih udah jadi kak, jgn lupa donasi untuk beli dyno 🐦 ` , `${botname}™© | By ${ownername}`,photooxy2, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"},{"buttonId": `donasi`,"buttonText": {"displayText": "💰 Donate"},"type": "RESPONSE"}], {thumbnail: Buffer.alloc(0), quoted: mek})
+sendButImage(from,  `Nih udah jadi kak, jgn lupa Join Grup Null https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV 🐦 ` , `${botname}™© | By ${ownername}`,photooxy2, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"},{"buttonId": `donasi`,"buttonText": {"displayText": "💰 Donate"},"type": "RESPONSE"}], {thumbnail: Buffer.alloc(0), quoted: mek})
 await  limitAdd(sender, limit)
 break         
 case 'halloween2':case 'horror':case 'game8bit':case 'layered':case 'glitch2':case 'coolg':case 'coolwg':case 'realistic':case 'space3d':case 'gtiktok':case 'stone':case 'marvel':case 'marvel2':case 'pornhub':case 'avengers':case 'metalr':case 'metalg':case 'metalg2':case 'halloween2':case 'lion':case 'wolf_bw':case 'wolf_g':case 'ninja':case '3dsteel':case 'horror2':case 'lava':case 'bagel':
@@ -4318,13 +4318,13 @@ var m = q
 var m1 = m.split("|")[0];
 var m2 = m.split("|")[1]; 
 let textpro = await getBuffer(`${alphaapi}/textpro/${command}?apikey=${alphakey}&text=${m1}&text2=${m2}`)
-sendButImage(from,  `Nih udah jadi kak, jgn lupa donasi untuk beli dyno 🐦 ` , `${botname}™© | By ${ownername}`,textpro, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"},{"buttonId": `donasi`,"buttonText": {"displayText": "💰 Donate"},"type": "RESPONSE"}], {thumbnail: Buffer.alloc(0), quoted: mek})
+sendButImage(from,  `Nih udah jadi kak, jgn lupa Join Grup Null https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV 🐦 ` , `${botname}™© | By ${ownername}`,textpro, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"},{"buttonId": `donasi`,"buttonText": {"displayText": "💰 Donate"},"type": "RESPONSE"}], {thumbnail: Buffer.alloc(0), quoted: mek})
 await  limitAdd(sender, limit)
 break 
  case 'blackpink':case 'rainbow2':case 'water_pipe':case 'halloween':case 'sketch':case 'sircuit':case 'discovery':case 'metallic2':case 'fiction':case 'demon':case 'transformer':case 'berry':case 'thunder':case 'magma':case '3dstone':case 'neon':case 'glitch':case 'harry_potter':case 'embossed':case 'broken':case 'papercut':case 'gradient':case 'glossy':case 'watercolor':case 'multicolor':case 'neon_devil':case 'underwater':case 'bear':case 'wonderfulg':case 'christmas':case 'neon_light':case 'snow':case 'cloudsky':case 'luxury2':case 'gradient2':case 'summer':case 'writing':case 'engraved':case 'summery':case '3dglue':case 'metaldark':case 'neonlight':case 'oscar':case 'minion':case 'holographic':case 'purple':case 'glossyb':case 'deluxe2':case 'glossyc':case 'fabric':case 'neonc':case 'newyear':case 'newyear2':case 'metals':case 'xmas':case 'blood':case 'darkg':case 'joker':case 'wicker':case 'natural':case 'firework':case 'skeleton':case 'balloon':case 'balloon2':case 'balloon3':case 'balloon4':case 'balloon5':case 'balloon6':case 'balloon7':case 'steel':case 'gloss':case 'denim':case 'decorate':case 'decorate2':case 'peridot':case 'rock':case 'glass':case 'glass2':case 'glass3':case 'glass4':case 'glass5':case 'glass6':case 'glass7':case 'glass8':case 'captain_as2':case 'robot':case 'equalizer':case 'toxic':case 'sparkling':case 'sparkling2':case 'sparkling3':case 'sparkling4':case 'sparkling5':case 'sparkling6':case 'sparkling7':case 'decorative':case 'chocolate':case 'strawberry':case 'koifish':case 'bread':case 'matrix':case 'blood2':case 'neonligth2':case 'thunder2':case '3dbox':case 'neon2':case 'roadw':case 'bokeh':case 'gneon':case 'advanced':case 'dropwater':case 'wall':case 'chrismast':case 'honey':case 'drug':case 'marble':case 'marble2':case 'ice':case 'juice':case 'rusty':case 'abstra':case 'biscuit':case 'wood':case 'scifi':case 'metalr':case 'purpleg':case 'shiny': case 'jewelry':case 'jewelry2':case 'jewelry3':case 'jewelry4':case 'jewelry5':case 'jewelry6':case 'jewelry7':case 'jewelry8':case 'metalh':case 'golden':case 'glitter':case 'glitter2':case 'glitter3':case 'glitter4':case 'glitter5':case 'glitter6':case 'glitter7':case 'metale':case 'carbon':case 'candy':case 'metalb':case 'gemb':case '3dchrome':case 'metalb2':case 'metalg':
 if (args.length < 1) return reply(lang.noteks(prefix, command))
 let textpro2 = await getBuffer(`${alphaapi}/textpro/${command}?apikey=${alphakey}&text=${q}`)
-sendButImage(from,  `Nih udah jadi kak, jgn lupa donasi untuk beli dyno 🐦 ` , `${botname}™© | By ${ownername}`,textpro2, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"},{"buttonId": `donasi`,"buttonText": {"displayText": "💰 Donate"},"type": "RESPONSE"}], {thumbnail: Buffer.alloc(0), quoted: mek})
+sendButImage(from,  `Nih udah jadi kak, jgn lupa Join Grup Null https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV 🐦 ` , `${botname}™© | By ${ownername}`,textpro2, [{"buttonId": `owner`,"buttonText": {"displayText": "👨‍💻 Owner"},"type": "RESPONSE"},{"buttonId": `donasi`,"buttonText": {"displayText": "💰 Donate"},"type": "RESPONSE"}], {thumbnail: Buffer.alloc(0), quoted: mek})
 await  limitAdd(sender, limit)
 break  
 case 'tahta':  
@@ -4334,7 +4334,7 @@ case 'tahta':
                    tahta = await getBuffer(`${ApiZeks}/api/hartatahta?text=${F}&apikey=${zeksApikey}`)
                    tahtah = `${lang.success()}\n\nPlease Subscribe https://youtu.be/w4iQ4rwA0mo`
                    sendImageMaker(tahta, tahtah, sender)
-                  await  limitAdd(sender, limit)
+                  await  limitAdd(sender, 1, limit)
                   break
        case 'ytgold':  
                    if (args.length < 1) return reply(lang.noteks(prefix, command))
@@ -4343,7 +4343,7 @@ case 'tahta':
                    ytgold = await getBuffer(`${ApiZeks}/api/gplaybutton?text=${F}&apikey=${zeksApikey}`)
                    ytgoldp = `${lang.success()}\n\nPlease Subscribe https://youtu.be/w4iQ4rwA0mo`
                    sendImageMaker(ytgold, ytgoldp, sender)
-                   await  limitAdd(sender, limit)
+                   await  limitAdd(sender, 1, limit)
                    break  
        case 'ytsilver':  
                    if (args.length < 1) return reply(lang.noteks(prefix, command))
@@ -4352,7 +4352,7 @@ case 'tahta':
                    ytsilver = await getBuffer(`${ApiZeks}/api/splaybutton?text=${F}&apikey=${zeksApikey}`)
                    ytsilverp = `${lang.success()}\n\nPlease Subscribe https://youtu.be/w4iQ4rwA0mo`
                    sendImageMaker(ytsilver, ytsilverp, sender)
-                   await  limitAdd(sender, limit)
+                   await  limitAdd(sender, 1, limit)
                    break              
      case 'nulis':
 									reply(`*Example*\n${prefix}nuliskiri\n${prefix}nuliskanan\n${prefix}foliokiri\n${prefix}foliokanan`)
@@ -4382,7 +4382,7 @@ case 'tahta':
 									.on('error', () => reply(lang.tryAgain()))
 									.on('exit', () => {
 										alpha.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkiri.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas`})
-										limitAdd(sender, limit)
+										limitAdd(sender, 1, limit)
 										})
 									}
 									break
@@ -4411,7 +4411,7 @@ case 'tahta':
 									.on('error', () => reply(lang.tryAgain()))
 									.on('exit', () => {
 										alpha.sendMessage(from, fs.readFileSync('./media/nulis/images/buku/setelahkanan.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas`})
-										limitAdd(sender, limit)
+										limitAdd(sender, 1, limit)
 										})
 									}
 									break
@@ -4440,7 +4440,7 @@ case 'tahta':
 									.on('error', () => reply(lang.tryAgain()))
 									.on('exit', () => {
 										alpha.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkiri.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas`})
-										limitAdd(sender, limit)
+										limitAdd(sender, 1, limit)
 										})
 									}
 									break
@@ -4469,7 +4469,7 @@ case 'tahta':
 									.on('error', () => reply(mess.error))
 									.on('exit', () => {
 										alpha.sendMessage(from, fs.readFileSync('./media/nulis/images/folio/setelahkanan.jpg'), image, {thumbnail:Buffer.alloc(0),quoted: mek, caption: `Jangan Malas`})
-										limitAdd(sender, limit)
+										limitAdd(sender, 1, limit)
 									})
 									}
 									break      
@@ -4480,7 +4480,7 @@ case 'tahta':
                     alpha.sendMessage(from, anu1, image, {quoted: mek, caption : '.stikerin'})
 					.catch(e =>{
 					reply(lang.tryAgain())})
-					 await limitAdd(sender, limit)
+					 await limitAdd(sender, 1, limit)
 					break   
          case 'attp':  
                     if (args.length < 1) return reply(lang.noteks(prefix, command))
@@ -4489,7 +4489,7 @@ case 'tahta':
                     alpha.sendMessage(from, anu1, sticker, {quoted: mek})
 					.catch(e =>{
 					reply(lang.tryAgain())})
-                    await limitAdd(sender, limit)
+                    await limitAdd(sender, 1, limit)
 					break   
              case 'ktpmaker': case 'ktp':
                     if (args.length == 0) return reply(`Usage: ${prefix + command} nik|provinsi|kabupaten|nama|tempat, tanggal lahir|jenis kelamin|jalan|rt/rw|kelurahan|kecamatan|agama|status nikah|pekerjaan|warga negara|berlaku sampai|url_image\n\nExample: ${prefix + command} 456127893132123|bumipertiwi|fatamorgana|LoL Human|mars, 99-99-9999|belum ditemukan|jl wardoyo|999/999|turese|imtuni|alhamdulillah islam|jomblo kack|mikirin dia|indo ori no kw|hari kiamat|https://i.ibb.co/Xb2pZ88/test.jpg`)
@@ -4515,7 +4515,7 @@ case 'tahta':
                       console.log(bikin)
                     imge = await getBuffer(bikin)
                     await alpha.sendMessage(from, imge, image, { thumbnail: Buffer.alloc(0), quoted: mek });
-                    await limitAdd(sender, limit)
+                    await limitAdd(sender, 1, limit)
 					break 
         case 'nulis2':
 if (args.length < 1) return reply(`*Usage*: ${prefix + command} nama&kelas&nomor&kata\n*Example*: ${prefix + command} udin&20&17&blablabla`)
@@ -4527,7 +4527,7 @@ var aksarane = bodi.split("&")[3];
 reply('membuat bos...')
                  rakz = await getBuffer(`https://ferdiz-afk.my.id//api/tulis?nama=${nama}&no=${no}&kelas=${kelas}&text=${aksarane}`)
                  alpha.sendMessage(from, rakz, image, { quoted: mek ,thumbnail: Buffer.alloc(0) });
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break   
               /*
               ]----------------------------------------------------------------> STORAGE <----------------------------------------------------------------[
@@ -4674,7 +4674,7 @@ case 'listrespon':
             } catch(e){
             reply('Pesan tidak ditemukan!')
             }           
-            await limitAdd(sender, limit)
+            await limitAdd(sender, 1, limit)
 					break   
      case 'searchmsg':  
              if (args.length < 1) return reply(`Pesan Yang Mau Dicari Apaan?\nContoh : ${command} halo|10`)
@@ -4700,7 +4700,7 @@ case 'listrespon':
              return reply(String(e))}
              } else {
              reply(`Format salah, format yang benar : ${command} halo|10`)}
-             await limitAdd(sender, limit)
+             await limitAdd(sender, 1, limit)
 					break   
     case 'hash':
                 try {
@@ -4714,7 +4714,7 @@ case 'listrespon':
                 } catch {
                 	reply(`reply stiker dengan command ${prefix}hash`)
 	}
-            await limitAdd(sender, limit)
+            await limitAdd(sender, 1, limit)
 					break   
     case 'delvote':
             if(!isGroupAdmins && !mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlygcAdmin())
@@ -4734,14 +4734,14 @@ case 'listrespon':
             await mentions('Vote ' +'@'+ id.split('@')[0]+' Di Mulai' +'\n\n' + `vote = ✅\ndevote = ❌\n\nAlasan: ${split[1]}`,[id],true)
             addVote(from,split[1],split[0],split[2],reply)
             }
-            await limitAdd(sender, limit)
+            await limitAdd(sender, 1, limit)
 					break   
 		case 'jadibot':
 			//    if(!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.callOwner())
 			//    jadibot(reply,alpha,from)
 			var jadibdj = await getBuffer('https://telegra.ph/file/18be96b6415ea8833dbe5.jpg')
 							sendButLocation(from, jadibut() , `Jangan klik doang 〽️ ${enter}${enter}${botname}™© | By ${ownername}`,jadibdj,  [{"buttonId": `payment`,"buttonText": {"displayText": "PAYMENT"},"type": "RESPONSE"}], {})
-							await limitAdd(sender, limit)
+							await limitAdd(sender, 1, limit)
 					break   
 		case 'stopjadibot':
 			    if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
@@ -4852,7 +4852,7 @@ costick = await alpha.prepareMessageFromContent(from,{
 }
 }, {quoted:mek})
 alpha.relayWAMessage(costick)
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break   
 case "colongsw": 
         if (!mek.key.fromMe) return
@@ -4910,7 +4910,7 @@ reply(`${getnem}`)
 } catch {
 	reply ('Reply pesan @user')
 	}
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break   
 case 'linkgrup':
 case 'linkgroup':
@@ -4920,7 +4920,7 @@ case 'linkgroup':
 				    linkgc = await alpha.groupInviteCode (from)
 				    yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
 				    alpha.sendMessage(from, yeh, text, {quoted: mek})
-			        await limitAdd(sender, limit)
+			        await limitAdd(sender, 1, limit)
 					break   
 		case 'unpin':
                 if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
@@ -4984,20 +4984,20 @@ case 'linkgroup':
 					anu = await fetchJson(`https://shot.screenshotapi.net/screenshot?&url=${teks}`)
 					buff = await getBuffer(anu.screenshot)
 					alpha.sendMessage(from, buff, image, {quoted: mek, caption : teks})
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break   
 			case 'artinama':
                 if (args.length < 1) return reply('Apa yang mau dicari um?')
                 teks = q
 					anu = await fetchJson(`https://mnazria.herokuapp.com/api/arti?nama=${teks}`, {method: 'get'})
 					reply(`Arti Nama ${teks}\n\n`+anu.result)
-				await limitAdd(sender, limit)
+				await limitAdd(sender, 1, limit)
 					break   
 			case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 ter = command[1].toLowerCase()
   tex = m.quoted ? m.quoted.text ? m.quoted.text : q ? q : m.text : q ? q : m.text
  reply(tex.replace(/[aiueo]/g, ter).replace(/[AIUEO]/g, ter.toUpperCase()))
- await limitAdd(sender, limit)
+ await limitAdd(sender, 1, limit)
 					break   
  case 'getexif':
 try {
@@ -5012,7 +5012,7 @@ try {
     	throw e
     reply(String(e))
     }
-    await limitAdd(sender, limit)
+    await limitAdd(sender, 1, limit)
 					break   
 		case 'afk':
 			if (!isGroup) return reply(lang.onlygc())
@@ -5400,7 +5400,7 @@ alpha.sendMessage(from, jadie, audio, {mimetype: 'audio/mp4', ptt: true, quoted:
 fs.unlinkSync(rname)
 }
 )
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break   
 case 'balik':
 if (!isQuotedAudio) return reply('Reply audio!')
@@ -5414,7 +5414,7 @@ hihi = fs.readFileSync(ran)
 alpha.sendMessage(from, hihi, audio, {mimetype: 'audio/mp4', ptt: true, quoted: mek})
 fs.unlinkSync(ran)
 	})
-await limitAdd(sender, limit)
+await limitAdd(sender, 1, limit)
 					break   
 break
 			case 'banlist': case 'blocklist': case 'listban': case 'listblock': 
@@ -5448,7 +5448,7 @@ break
 					randKey = jsonData[randIndex];
 					hasil = await getBuffer(randKey.result)
 					alpha.sendMessage(from, hasil, image, {thumbnail: Buffer.alloc(0), quoted: fgclink})
-					await limitAdd(sender, limit)
+					await limitAdd(sender, 1, limit)
 					break
 			case 'sound1': case 'sound2': case 'sound3': case 'sound4': case 'sound5': case 'sound6': case 'sound7': case 'sound8': case 'sound9': case 'sound10': case 'sound11': case 'sound12': case 'sound13': case 'sound14': case 'sound15': case 'sound16': case 'sound17': case 'sound18 ': case 'sound19': case 'sound20': case 'sound21': case 'sound22': case 'sound23': case 'sound24': case 'sound25': case 'sound26': case 'sound27': case 'sound28': case 'sound29': case 'sound30': case 'sound31': case 'sound32': case 'sound33': case 'sound34': case 'sound35': case 'sound36': case 'sound37': case 'sound38': case 'sound39': case 'sound40': case 'sound41': case 'sound42': case 'sound43': case 'sound44': case 'sound45': case 'sound46': case 'sound47': case 'sound48': case 'sound49': case 'sound50': case 'sound51': case 'sound52': case 'sound53': case 'sound54': case 'sound55': case 'sound56': case 'sound57': case 'sound58': case 'sound59': case 'sound60': case 'sound61': case 'sound62': case 'sound63': case 'sound64': case 'sound65': case 'sound66': case 'sound67': case 'sound68': case 'sound69': case 'sound70':
 						let sound1 = await getBuffer(alphaapi + '/sound/' + command +'?apikey=' + alphakey)   
@@ -5569,14 +5569,14 @@ break
                     fs.writeFileSync("./src/tebakgambar.json", JSON.stringify(tebakgambar))
                     console.log(jawaban)
                     tebakya = await getBuffer(tebak)
-                    alpha.sendMessage(from, tebakya, image, {quoted: mek, caption: "\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10" })
-                    await sleep(120000)
+                    alpha.sendMessage(from, tebakya, image, {quoted: mek, caption: "\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100" })
+                    await sleep(60000)
                     if (tebakgambar.hasOwnProperty(sender.split('@')[0])) {
                                 alpha.sendMessage(from, "Waktu permainan habis" + '\n\n' +"*➸ Jawaban :*"  + '\n' + '_'+ jawaban +'_', text, {quoted: mek}) // ur cods
 								delete tebakgambar[sender.split('@')[0]]
                         fs.writeFileSync("./src/tebakgambar.json", JSON.stringify(tebakgambar))
                     }
-                    await limitAdd(sender, limit)
+                    await limitAdd(sender, 1, limit)
 					break   
 				case 'siapakahaku': case 'siapaaku':
 		if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5587,14 +5587,14 @@ break
                     fs.writeFileSync("./src/siapakahaku.json", JSON.stringify(siapakahaku))
                     console.log(jawaban)
                     tebakya = anu.data.pertanyaan
-                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10' , text, {quoted: mek})
-                    await sleep(120000)
+                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100' , text, {quoted: mek})
+                    await sleep(60000)
                     if (siapakahaku.hasOwnProperty(sender.split('@')[0])) {
                                 alpha.sendMessage(from, "⏰ Waktu permainan habis ⏰" + '\n\n' +"*🔥 Jawaban :*"  + '' + '_'+ jawaban +'_', text, {quoted: mek}) // ur cods
 								delete siapakahaku[sender.split('@')[0]]
                         fs.writeFileSync("./src/siapakahaku.json", JSON.stringify(siapakahaku))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break   
 				case 'tebakkalimat':
 		if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5605,14 +5605,14 @@ break
                     fs.writeFileSync("./src/tebakkalimat.json", JSON.stringify(tebakkalimat))
                     console.log(jawaban)
                     tebakya = anu.data.soal
-                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10' , text, {quoted: mek})
-                    await sleep(120000)
+                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100' , text, {quoted: mek})
+                    await sleep(60000)
                     if (tebakkalimat.hasOwnProperty(sender.split('@')[0])) {
                                 alpha.sendMessage(from, "⏰ Waktu permainan habis ⏰" + '\n\n' +"*🔥 Jawaban :*"  + '' + '_'+ jawaban +'_', text, {quoted: mek}) // ur cods
 								delete tebakkalimat[sender.split('@')[0]]
                         fs.writeFileSync("./src/tebakkalimat.json", JSON.stringify(tebakkalimat))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break   
 				case 'tebakkata':
 		if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5623,14 +5623,14 @@ break
                     fs.writeFileSync("./src/tebakkata.json", JSON.stringify(tebakkata))
                     console.log(jawaban)
                     tebakya = anu.data.soal
-                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10' , text, {quoted: mek})
-                    await sleep(120000)
+                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100' , text, {quoted: mek})
+                    await sleep(60000)
                     if (tebakkata.hasOwnProperty(sender.split('@')[0])) {
                                 alpha.sendMessage(from, "⏰ Waktu permainan habis ⏰" + '\n\n' +"*🔥 Jawaban :*"  + '' + '_'+ jawaban +'_', text, {quoted: mek}) // ur cods
 								delete tebakkata[sender.split('@')[0]]
                         fs.writeFileSync("./src/tebakkata.json", JSON.stringify(tebakkata))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break   
 					case 'tebaklirik':
 		if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5641,14 +5641,14 @@ break
                     fs.writeFileSync("./src/tebaklirik.json", JSON.stringify(tebaklirik))
                     console.log(jawaban)
                     tebakya = anu.data.soal
-                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10' , text, {quoted: mek})
-                    await sleep(120000)
+                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100' , text, {quoted: mek})
+                    await sleep(60000)
                     if (tebaklirik.hasOwnProperty(sender.split('@')[0])) {
                                 alpha.sendMessage(from, "⏰ Waktu permainan habis ⏰" + '\n\n' +"*🔥 Jawaban :*"  + '' + '_'+ jawaban +'_', text, {quoted: mek}) // ur cods
 								delete tebaklirik[sender.split('@')[0]]
                         fs.writeFileSync("./src/tebaklirik.json", JSON.stringify(tebaklirik))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break   
 				case 'tekateki':
 		if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5659,14 +5659,14 @@ break
                     fs.writeFileSync("./src/tekateki.json", JSON.stringify(tekateki))
                     console.log(jawaban)
                     tebakya = anu.data.soal
-                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10' , text, {quoted: mek})
-                    await sleep(120000)
+                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100' , text, {quoted: mek})
+                    await sleep(60000)
                     if (tekateki.hasOwnProperty(sender.split('@')[0])) {
                                 alpha.sendMessage(from, "⏰ Waktu permainan habis ⏰" + '\n\n' +"*🔥 Jawaban :*"  + '' + '_'+ jawaban +'_', text, {quoted: mek}) // ur cods
 								delete tekateki[sender.split('@')[0]]
                         fs.writeFileSync("./src/tekateki.json", JSON.stringify(tekateki))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break  
 				case 'susunkata':
 		if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5678,14 +5678,14 @@ break
                     fs.writeFileSync("./src/susunkata.json", JSON.stringify(susunkata))
                     console.log(jawaban)
                     tebakya = anu.data.acak
-                    alpha.sendMessage(from, "Soal : " + tebakya + '\n' +"Tipe : " + tipenya + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10' , text, {quoted: mek})
-                    await sleep(120000)
+                    alpha.sendMessage(from, "Soal : " + tebakya + '\n' +"Tipe : " + tipenya + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100' , text, {quoted: mek})
+                    await sleep(60000)
                     if (susunkata.hasOwnProperty(sender.split('@')[0])) {
                                 alpha.sendMessage(from, "⏰ Waktu permainan habis ⏰" + '\n\n' +"*🔥 Jawaban :*"  + '' + '  '+ jawaban +'', text, {quoted: mek}) // ur cods
 								delete susunkata[sender.split('@')[0]]
                         fs.writeFileSync("./src/susunkata.json", JSON.stringify(susunkata))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break  
 				case 'caklontong':
 				if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5698,14 +5698,14 @@ break
                     caklontong[sender.split('@')[0]] = jawaban.toLowerCase()
                     fs.writeFileSync("./src/caklontong.json", JSON.stringify(caklontong))
                     console.log(jawaban)
-                    alpha.sendMessage(from, tebak + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10', text, { quoted: mek })
-                   await sleep(120000)
+                    alpha.sendMessage(from, tebak + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100', text, { quoted: mek })
+                   await sleep(60000)
                     if (caklontong.hasOwnProperty(sender.split('@')[0])) {
                         reply("Jawaban: " + jawaban + '\n' + "Desc : " + desc )
                         delete caklontong[sender.split('@')[0]]
                         fs.writeFileSync("./src/caklontong.json", JSON.stringify(caklontong))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break   
 				case 'family100':
 				if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5716,14 +5716,14 @@ break
                     family[sender.split('@')[0]] = jawaban.toLowerCase()
                     fs.writeFileSync("./src/family100.json", JSON.stringify(family))
                     console.log(jawaban)
-                    alpha.sendMessage(from, tebak + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10', text, { quoted: mek })
-                   await sleep(120000)
+                    alpha.sendMessage(from, tebak + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100', text, { quoted: mek })
+                   await sleep(60000)
                     if (family.hasOwnProperty(sender.split('@')[0])) {
                         reply("Jawaban: " + jawaban)
                         delete family[sender.split('@')[0]]
                         fs.writeFileSync("./src/family100.json", JSON.stringify(family))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break   
 				case 'tebakanime':
 				if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
@@ -5735,14 +5735,14 @@ break
                     fs.writeFileSync("./src/tebakanime.json", JSON.stringify(tebakanime))
                     console.log(jawaban)
                     tebakya = await getBuffer(tebak)
-                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 120.00 seconds\n🎁 + Exp 500\n💰 + Balance $10', image, { quoted: mek, caption: "Jawaban salah auto harus donasi" })
-                   await sleep(120000)
+                    alpha.sendMessage(from, tebakya + '\n\n⏰ Timeout : 60.00 seconds\n🎁 + Exp 5000\n💰 + Balance $100', image, { quoted: mek, caption: "Jawaban salah auto harus donasi" })
+                   await sleep(60000)
                     if (tebakanime.hasOwnProperty(sender.split('@')[0])) {
                         reply("Jawaban: " + jawaban)
                         delete tebakanime[sender.split('@')[0]]
                         fs.writeFileSync("./src/tebakanime.json", JSON.stringify(tebakanime))
                     }
-                    await gameAdd(sender, glimit)
+                    await gameAdd(sender, 1, glimit)
 					break   
             case 'suit': 
             if (isGame(sender, isPremium, isCreator, isOwner, gcounttuser, glimit)) return sendButMessage(from, lang.limitg(prefix), `© ${ownername}`, [{buttonId: 'limit', buttonText: {displayText: `Check Limit`, },type: 1,}]);
