@@ -1,28 +1,19 @@
 const pc_sewa = (_minggu, __minggu, ___minggu, _bulan, _permanen, __permanen) => {
-return `「 *PRICE LIST* 」
-							
-⬣ PRICE SEWABOT
+return `*< PRICE SEWABOT >*
 
-⬡ 1 MINGGU = ${_minggu}
-⬡ 2 MINGGU = ${__minggu}
-⬡ 3 MINGGU = ${___minggu}
-⬡ 1 BULAN = ${_bulan}
-⬡ PERMANEN = ${_permanen}
-⬡ PERMANEN + USER PREM = ${__permanen}
+*< PRICE PERMANENT GRUP >*
+Rp 10.000,00
 
+Via Pembayaran:
+• Shoope
+• Dana
+• Pulsa 
 
-⬣ PRICE JADIBOT
+*JOIN GRUP NULL BOT OFFICIAL*
+https://chat.whatsapp.com/Hl4KQuVJrZP0OtBmcdF9CV
 
-⬡ JADI BOT PERMANEN 25K
-
-
-⬣ MINAT? PM
-⬡ wa.me/62887435047326
-
-
-NOTE : 
-Bot On 24 Jam Karna Di Run Menggunakan Heroku
-Reset Data Setiap Jam 02:00 `
+Minat?Pm
+Wa.me//62895410650067 `
 	}
 
 exports.pc_sewa = pc_sewa
